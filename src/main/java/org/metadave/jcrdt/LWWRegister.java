@@ -8,6 +8,10 @@ public class LWWRegister<U extends Comparable, V> {
     V v;
 
     public void write(U up, V vp) {
+        join(up, vp);
+    }
+
+    public void join(U up, V vp) {
         if(u == null) {
             u = up;
             v = vp;
@@ -16,7 +20,6 @@ public class LWWRegister<U extends Comparable, V> {
             v = vp;
         }
     }
-
     public void join(LWWRegister<U, V> other) {
         if(u == null) {
             u = other.u;
