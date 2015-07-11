@@ -7,6 +7,11 @@ public class PNCounter {
     GCounter p;
     GCounter n;
 
+    public PNCounter() {
+        p = new GCounter();
+        n = new GCounter();
+    }
+
     public void inc(String id) {
         inc(id, 1);
     }
