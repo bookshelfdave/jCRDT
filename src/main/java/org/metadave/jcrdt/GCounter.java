@@ -17,7 +17,7 @@ public class GCounter {
     }
 
     public void inc(String id, long tosum) {
-        GCounter res = new GCounter();
+        //GCounter res = new GCounter();
         if(m.containsKey(id)) {
             m.put(id, m.get(id) + tosum);
         } else {

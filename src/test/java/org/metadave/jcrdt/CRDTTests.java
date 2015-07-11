@@ -98,6 +98,7 @@ public class CRDTTests {
         pn1.dec("bar");
 
         System.out.println(pn1.read());
+
         PNCounter pn2 = new PNCounter();
 
         pn2.inc("foo");
